@@ -1,8 +1,8 @@
-import Link from "next/link";
-import Image from "next/image";
-import { Text, useColorModeValue } from "@chakra-ui/react";
-import styled from "@emotion/styled";
-import hexagon from "../assets/images/hexagon-light.jpg";
+import Link from 'next/link'
+import Image from 'next/image'
+import { Text, useColorModeValue } from '@chakra-ui/react'
+import styled from '@emotion/styled'
+import hexagon from '../assets/images/hexagon-light.jpg'
 
 const LogoBox = styled.span`
   font-weight: bold;
@@ -19,15 +19,15 @@ const LogoBox = styled.span`
     transition-duration: 10s;
     transition-property: width;
   }
-`;
+`
 
 const Logo = () => {
   return (
     <Link href="/">
       <LogoBox>
-        <Image src={hexagon} alt="logo" width={90} height={30} />
+        <Image src={hexagon} alt="logo" width={30} height={30} />
         <Text
-          color={useColorModeValue("gray.800", "whiteAlpha.900")}
+          color={useColorModeValue('gray.800', 'whiteAlpha.900')}
           fontFamily="M PLUS Rounded 1c"
           fontWeight="bold"
           ml={3}
@@ -36,7 +36,7 @@ const Logo = () => {
         </Text>
       </LogoBox>
     </Link>
-  );
-};
+  )
+}
 
-export default Logo;
+export default Logo
