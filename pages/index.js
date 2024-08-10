@@ -1,4 +1,6 @@
-import { Container, Box, Heading, Image } from '@chakra-ui/react'
+import { Container, Box, Heading, Image, Link } from '@chakra-ui/react'
+import Section from '../components/section'
+import Paragraph from '../components/paragraph'
 
 const Page = () => {
   return (
@@ -27,11 +29,23 @@ const Page = () => {
             maxWidth="100px"
             display="inline-block"
             borderRadius="full"
-            src={pfp}
+            src={''}
             alt="Profile Image"
           />
         </Box>
       </Box>
+      <Section delay={0.1}>
+        <Heading as="h3" variant="section-title">
+          Work
+        </Heading>
+        <Paragraph>
+          I'm currently working at{' '}
+          <Link href="https://www.linkedin.com/company/itau-unibanco/">
+            Itaú Unibanco
+          </Link>{' '}
+          as a Software Developer.
+        </Paragraph>
+      </Section>
     </Container>
   )
 }
