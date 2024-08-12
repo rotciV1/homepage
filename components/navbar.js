@@ -104,7 +104,6 @@ const Navbar = props => {
           </Box>
         </Box>
       </Container>
-      <Box></Box>
     </Box>
   )
 }
